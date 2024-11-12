@@ -14,6 +14,7 @@ on:
       - 'prod'
     paths:
       - '**'
+  workflow_dispatch:
 
 
 
