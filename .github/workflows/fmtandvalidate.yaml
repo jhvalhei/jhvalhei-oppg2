@@ -31,7 +31,7 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      WORKING_DIR: ./course materials/module07/demo-infra
+      WORKING_DIR: ./
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
