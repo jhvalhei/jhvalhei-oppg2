@@ -10,7 +10,7 @@ variable "location" {
 }
 variable "sc_name" {
   type = string
-  description = "name of storage-container"
+  description = "name of storage--container"
   default = "jh-sc"
 }
 variable "sa_prefix" {
