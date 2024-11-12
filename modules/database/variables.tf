@@ -24,11 +24,6 @@ variable "sa_name" {
 }
 variable "mysqlserver_admin_username" {
   type = string
-  default = "4dm1n157r470r"
-  sensitive = true
-}
-variable "mysqlserver_admin_password" {
-  type = string
-  default = "4-v3ry-53cr37-p455w0rd"
+  default = "admin"
   sensitive = true
 }
