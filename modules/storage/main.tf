@@ -1,7 +1,7 @@
 resource "random_string" "random" {
-  length           = 10
-  special          = false
-  upper = false
+  length  = 10
+  special = false
+  upper   = false
 }
 #Storage account for storing images
 resource "azurerm_storage_account" "sa" {
@@ -13,7 +13,7 @@ resource "azurerm_storage_account" "sa" {
 }
 resource "azurerm_storage_container" "sc" {
   name                  = var.sc_name
-  storage_account_name    = azurerm_storage_account.sa.name
+  storage_account_name  = azurerm_storage_account.sa.name
   container_access_type = "private"
 }
 

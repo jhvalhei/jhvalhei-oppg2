@@ -1,18 +1,18 @@
 variable "rg_name" {
-  type = string
+  type        = string
   description = "name of rg"
-  default = "jh-rg"
+  default     = "jh-rg"
 }
 variable "sa_prefix" {
-  type = string
+  type        = string
   description = "prefix of storage account"
-  default = "sa"
+  default     = "sa"
 }
 variable "location" {
-  type = string
+  type        = string
   description = "location of resource"
 }
 variable "sc_name" {
-  type = string
+  type        = string
   description = "name of storage container"
 }

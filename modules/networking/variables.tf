@@ -14,17 +14,17 @@ variable "lb_name" {
   default     = "jh-lb"
 }
 variable "vnet_name" {
-  type = string
+  type        = string
   description = "name of vnet"
-  default = "jh-vnet"
+  default     = "jh-vnet"
 }
 variable "subnet1_name" {
-  type = string
+  type        = string
   description = "name of subnet1"
-  default = "jh-subnet1"
+  default     = "jh-subnet1"
 }
 variable "subnet2_name" {
-  type = string
+  type        = string
   description = "name of subnet2"
-  default = "jh-subnet2"
+  default     = "jh-subnet2"
 }

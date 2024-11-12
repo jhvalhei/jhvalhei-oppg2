@@ -9,12 +9,12 @@ variable "location" {
   default     = "westeurope"
 }
 variable "sc_name" {
-  type = string
+  type        = string
   description = "name of storage--container"
-  default = "jh-sc"
+  default     = "jh-sc"
 }
 variable "sa_prefix" {
-  type = string
+  type        = string
   description = "prefix of storage account"
-  default = "sa"
+  default     = "sa"
 }

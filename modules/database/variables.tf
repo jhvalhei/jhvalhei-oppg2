@@ -1,29 +1,29 @@
 variable "mysqlserver_name" {
-  type = string
+  type        = string
   description = "name of mysql server"
-  default = "jh-mysqlserver"
+  default     = "jh-mysqlserver"
 }
 variable "rg_name" {
-  type = string
+  type        = string
   description = "name of resource group"
-  default = "jh-rg"
+  default     = "jh-rg"
 }
 variable "mysql_db" {
-  type = string
+  type        = string
   description = "name of mysql database"
-  default = "jh-mysqldb"
+  default     = "jh-mysqldb"
 }
 variable "location" {
-  type = string
+  type        = string
   description = "location of resource"
-  default = "westeurope"
+  default     = "westeurope"
 }
 variable "sa_name" {
-  type = string
+  type        = string
   description = "name of storage account for images"
 }
 variable "mysqlserver_admin_username" {
-  type = string
-  default = "admin"
+  type      = string
+  default   = "admin"
   sensitive = true
 }

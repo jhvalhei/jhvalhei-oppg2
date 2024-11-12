@@ -1,7 +1,7 @@
 resource "random_string" "randompass" {
-  length           = 10
-  special          = false
-  upper = false
+  length  = 10
+  special = false
+  upper   = false
 }
 
 resource "azurerm_mssql_server" "mysqlserver" {
@@ -9,8 +9,8 @@ resource "azurerm_mssql_server" "mysqlserver" {
   resource_group_name          = var.rg_name
   location                     = var.location
   version                      = "12.0"
-  administrator_login          = var.mysqlserver_admin_username    # burde kanskje random-generere
-  administrator_login_password = "${random_string.randompass.result}"
+  administrator_login          = var.mysqlserver_admin_username # burde kanskje random-generere
+  administrator_login_password = random_string.randompass.result
 }
 
 resource "azurerm_mssql_database" "mysqldb" {
@@ -21,9 +21,9 @@ resource "azurerm_mssql_database" "mysqldb" {
   max_size_gb  = 2
   sku_name     = "S0"
   enclave_type = "VBS"
-  }
+}
 
-  data "azurerm_storage_account" "sa" {
+data "azurerm_storage_account" "sa" {
   name                = var.sa_name
   resource_group_name = var.rg_name
 }
