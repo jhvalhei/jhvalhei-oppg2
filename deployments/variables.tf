@@ -8,3 +8,12 @@ variable "location" {
   description = "location of resource"
   default     = "westeurope"
 }
+variable "sc_name" {
+  type = string
+  description = "name of storage container"
+  default = "jh-sc"
+}
+variable "sa_prefix" {
+  type = string
+  description = "prefix of storage account"
+}
