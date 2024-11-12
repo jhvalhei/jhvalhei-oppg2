@@ -4,6 +4,6 @@ resource "azurerm_resource_group" "rg" {
 }
 
 module "network" {
-  source = "../modules/networking"
+  source  = "../modules/networking"
   rg_name = azurerm_resource_group.rg.name
 }
