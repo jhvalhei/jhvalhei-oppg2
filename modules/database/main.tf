@@ -1,7 +1,5 @@
 resource "random_string" "randompass" {
   length  = 10
-  special = false
-  upper   = false
 }
 
 resource "azurerm_mssql_server" "mysqlserver" {
