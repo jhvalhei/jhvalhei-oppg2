@@ -16,5 +16,5 @@ variable "sc_name" {
 variable "sa_prefix" {
   type = string
   description = "prefix of storage account"
-  
+  default = "sa"
 }
