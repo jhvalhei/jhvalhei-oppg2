@@ -4,7 +4,6 @@ name: Deploy infrastructure stage and dev
 on:
   push:
     branches:
-      - 'dev'
       - 'stage'
     paths:
       - '**'
@@ -29,6 +28,10 @@ jobs:
       - name: Terraform init
         id: init
         run: terraform init
+        working-directory: ${{ env.WORKING_DIR }}
+
+      - name: Terraform workspace select or create stage
+        run: terraform workspace select stage || terraform workspace new stage
         working-directory: ${{ env.WORKING_DIR }}
       
       # Generate a plan for Terraform changes
