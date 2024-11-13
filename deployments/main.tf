@@ -27,3 +27,7 @@ module "networking" {
   source  = "../modules/networking"
   rg_name = azurerm_resource_group.rg.name
 }
+module "app_service" {
+  source = "../modules/app_services"
+  rg_name = azurerm_resource_group.rg.name
+}
